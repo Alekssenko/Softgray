@@ -176,7 +176,9 @@ body {
       font-size: 16px;
       color: black;
       font-weight: bold;
-      line-height: 2.25; }
+      line-height: 2.25;
+      cursor: pointer;
+      outline:none}
 
 .news-items {
   padding-top: 50px;
@@ -448,6 +450,7 @@ body {
   .footer-info .footer-data {
     width: 100%; }
   .footer-data {
+    width:50%;
     padding: 15px 0;
     margin: 0 auto; }
   .form {
@@ -462,4 +465,13 @@ body {
     font-size: 36px;
     padding: 0; }
   .footer-data .letter {
-    width: 220px; } }
+    width: 220px; }}
+  @media screen and (max-width: 350px) {
+  body .main-area .main-area-text p {
+    width:120%;
+  }
+    .footer-info,.footer-data {
+      width:70%;
+    }
+
+}
